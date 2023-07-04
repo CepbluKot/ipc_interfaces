@@ -7,6 +7,7 @@ while 1:
     resa = inter.readMsg()
     # for b in resa:
     #     print(int(b), end=' ')
-    # print(int.from_bytes(resa.strip('\x00'), 'big'))    
-    print(ord(resa))
+    print(int.from_bytes(resa, 'little'))    
+    print(resa)
+    print(resa[:5])
     time.sleep(1)

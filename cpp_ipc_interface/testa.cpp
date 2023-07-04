@@ -22,16 +22,17 @@ int main()
         std::cout.flush();
         std::this_thread::sleep_for(std::chrono::milliseconds(1000));
         
-        inter->sendMsg(i, sizeof(i));
+        inter->sendMsg(s.c_str(), s.size());
 
         std::cout << "done smth"<<std::endl;
        
-        int* data_ = static_cast<int*>(inter->readMsg());
+        char* data_ = static_cast<char*>(inter->readMsg());
         // // read the data from the shared memory
         // char data_got[1024];
         // memcpy(data_got, data_, 1024);
         
-        std::cout <<  *data_ << ' ';
+        std::cout <<  data_ << ' ';
+        // reinit mem!
         
 
     }

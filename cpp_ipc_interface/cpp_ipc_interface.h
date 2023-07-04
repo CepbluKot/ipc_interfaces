@@ -48,6 +48,10 @@ public:
         Json::Value completeJsonData;
         reader.parse(file, completeJsonData);
         this->channel_id = completeJsonData["main_channel_id"].asInt();
+
+        int m_shmid = shmget(this->channel_id, 1, IPC_CREAT | 0666);
+        shmctl(m_shmid, IPC_RMID, 0);
+
     };
 
     ~IPCInterface();
