@@ -26,12 +26,12 @@ int main()
 
         std::cout << "done smth"<<std::endl;
        
-        char* data_ = (char*)(inter->readMsg());
+        int* data_ = static_cast<int*>(inter->readMsg());
         // // read the data from the shared memory
         // char data_got[1024];
         // memcpy(data_got, data_, 1024);
         
-            std::cout <<  data_ << ' ';
+        std::cout <<  *data_ << ' ';
         
 
     }
