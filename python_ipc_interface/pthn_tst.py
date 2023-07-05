@@ -9,5 +9,4 @@ while 1:
     #     print(int(b), end=' ')
     print(int.from_bytes(resa, 'little'))    
     print(resa)
-    print(resa[:5])
     time.sleep(1)

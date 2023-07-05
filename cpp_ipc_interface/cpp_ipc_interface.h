@@ -15,7 +15,6 @@
 #include <signal.h>
 
 
-
 void posixDeathSignalAction(int signum)
 {
 
@@ -30,13 +29,11 @@ void posixDeathSignalAction(int signum)
     shmctl(m_shmid, IPC_RMID, 0);
     std::cout << "tried 2 destroy" << std::endl;
 
-    throw std::invalid_argument("throw after attempt  2 fix error ");
+    // throw std::invalid_argument("throw after attempt  2 fix error ");
 
     // signal(signum, SIG_DFL); // перепосылка сигнала
     // exit(3); //выход из программы. Если не сделать этого, то обработчик будет вызываться бесконечно.
 }
-
-
 
 class IPCInterface
 {
@@ -51,17 +48,16 @@ public:
 
         int m_shmid = shmget(this->channel_id, 1, IPC_CREAT | 0666);
         shmctl(m_shmid, IPC_RMID, 0);
-
     };
 
     ~IPCInterface();
 
     template <typename T>
-    void sendMsg(T data, int size)
+    void sendMsgVar(T data, int size)
     {
         signal(SIGSEGV, posixDeathSignalAction);
 
-        if(size != this->prev_size)
+        if (size != this->prev_size)
         {
             std::cout << "NEWshit happens" << std::endl;
             int m_shmid = shmget(this->channel_id, 1, IPC_CREAT | 0666);
@@ -70,24 +66,30 @@ public:
             this->prev_size = size;
         }
 
-        // try
         {
             int m_shmid = shmget(this->channel_id, size, IPC_CREAT | 0666);
             auto sharedMem = shmat(m_shmid, NULL, 0);
-            // T *write_data = new (toWriteNewData) T(data);
-
-            memcpy( sharedMem, data , size );
-
+            T *write_data = new (sharedMem) T(data);
         }
-        // catch (const std::exception &e)
-        // {
-        //     std::cout << "doin stuff after err";
-            
-        //     int m_shmid = shmget(this->channel_id, size, IPC_CREAT | 0666);
-        //     auto toWriteNewData = shmat(m_shmid, NULL, 0);
-        //     T *write_data = new (toWriteNewData) T(data);
+    }
 
-        // }
+    template <typename T>
+    void sendMsgArr(T data, int size)
+    {
+        signal(SIGSEGV, posixDeathSignalAction);
+
+        if (size != this->prev_size)
+        {
+            std::cout << "NEWshit happens" << std::endl;
+            int m_shmid = shmget(this->channel_id, 1, IPC_CREAT | 0666);
+            shmctl(m_shmid, IPC_RMID, 0);
+            std::cout << "NEWtried 2 destroy" << std::endl;
+            this->prev_size = size;
+        }
+
+        int m_shmid = shmget(this->channel_id, size, IPC_CREAT | 0666);
+        auto sharedMem = shmat(m_shmid, NULL, 0);
+        memcpy(sharedMem, data, size);
     }
 
     auto readMsg()
@@ -100,6 +102,4 @@ public:
 private:
     int channel_id;
     int prev_size;
-
-
 };
