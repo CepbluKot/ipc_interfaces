@@ -25,7 +25,7 @@ class IPCInterface:
             
             
     def readMsg(self) -> bytes:
-        memory = sysv_ipc.SharedMemory(self.main_channel_id, mode=0o666, flags=sysv_ipc.IPC_CREAT)
+        memory = sysv_ipc.SharedMemory(self.main_channel_id, mode=0o666,  flags=sysv_ipc.IPC_CREAT)
         res = memory.read()
         memory.detach()
         return res
