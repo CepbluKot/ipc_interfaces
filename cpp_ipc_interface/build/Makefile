@@ -129,29 +129,29 @@ writer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/build
 .PHONY : writer/fast
 
-home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.o: home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp.o
-.PHONY : home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.o
+home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.o: home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp.o
+.PHONY : home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.o
 
 # target to build an object file
-home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp.o
-.PHONY : home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp.o
+home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp.o
+.PHONY : home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp.o
 
-home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.i: home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp.i
-.PHONY : home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.i
+home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.i: home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp.i
+.PHONY : home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.i
 
 # target to preprocess a source file
-home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp.i
-.PHONY : home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp.i
+home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp.i
+.PHONY : home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp.i
 
-home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.s: home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp.s
-.PHONY : home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.s
+home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.s: home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp.s
+.PHONY : home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.s
 
 # target to generate assembly for a file
-home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp.s
-.PHONY : home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp.s
+home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp.s
+.PHONY : home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... writer"
-	@echo "... home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.o"
-	@echo "... home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.i"
-	@echo "... home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.s"
+	@echo "... home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.o"
+	@echo "... home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.i"
+	@echo "... home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.s"
 .PHONY : help
 
 

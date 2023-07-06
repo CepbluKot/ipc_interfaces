@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp.o -o writer  -ljsoncpp 
+/usr/bin/c++ CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp.o -o writer  -ljsoncpp 

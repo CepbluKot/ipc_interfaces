@@ -69,28 +69,28 @@ include CMakeFiles/writer.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/writer.dir/flags.make
 
-CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp.o: CMakeFiles/writer.dir/flags.make
-CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp.o: /home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp
-CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp.o: CMakeFiles/writer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp.o -MF CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp.o.d -o CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp.o -c /home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp
+CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp.o: CMakeFiles/writer.dir/flags.make
+CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp.o: /home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp
+CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp.o: CMakeFiles/writer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp.o -MF CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp.o.d -o CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp.o -c /home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp
 
-CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp > CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp.i
+CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp > CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp.i
 
-CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp -o CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp.s
+CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp -o CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp.s
 
 # Object files for target writer
 writer_OBJECTS = \
-"CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp.o"
+"CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp.o"
 
 # External object files for target writer
 writer_EXTERNAL_OBJECTS =
 
-writer: CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp.o
+writer: CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp.o
 writer: CMakeFiles/writer.dir/build.make
 writer: CMakeFiles/writer.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable writer"

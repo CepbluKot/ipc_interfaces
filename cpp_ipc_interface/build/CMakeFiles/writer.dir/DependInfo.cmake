@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp" "CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp.o" "gcc" "CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/testa.cpp.o.d"
+  "/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp" "CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp.o" "gcc" "CMakeFiles/writer.dir/home/oleg/Documents/ipc_interfaces/cpp_ipc_interface/test.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
