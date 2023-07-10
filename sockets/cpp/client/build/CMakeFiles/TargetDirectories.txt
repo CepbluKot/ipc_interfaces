@@ -1,0 +1,3 @@
+/home/oleg/Documents/socketInterface/cpp/client/build/CMakeFiles/client.dir
+/home/oleg/Documents/socketInterface/cpp/client/build/CMakeFiles/edit_cache.dir
+/home/oleg/Documents/socketInterface/cpp/client/build/CMakeFiles/rebuild_cache.dir

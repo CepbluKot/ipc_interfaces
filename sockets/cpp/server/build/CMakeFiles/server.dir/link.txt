@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/server.dir/home/oleg/Documents/socketInterface/cpp/server/server.cpp.o -o server 

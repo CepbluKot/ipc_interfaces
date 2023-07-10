@@ -1,0 +1,30 @@
+import json, typing, socket
+
+
+class Server:
+    def __init__(self) -> None:
+        f = open('config.json')
+        config = json.load(f)
+        port = config['port']
+        ip = '127.0.0.1'
+        self.nSymbols = config['nSymbols']
+
+        self.s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.s.bind((ip, port))
+
+    def connect(self):
+        self.s.listen()
+        self.conn, addr = self.s.accept()
+
+
+    def serverJob(self, onReceive: typing.Callable[[], str]):
+        try:
+            while True:
+                received = self.conn.recv(self.nSymbols)
+                if received and len(received):
+                    onReceive(received)
+                else:
+                    self.conn.close()
+        except:
+            self.connect()
+            self.serverJob(onReceive)
