@@ -2,6 +2,7 @@ using System;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using Newtonsoft.Json;
 
 // Client app is the one sending messages to a Server/listener.
 // Both listener and client can send messages back and forth once a
@@ -11,11 +12,30 @@ using System.Text;
 
 class Client
 {
+        class Config
+    {
+        [JsonProperty("port")]
+        public int port { get; set; }
+
+        [JsonProperty("nSymbols")]
+        public int nSymbols { get; set; }
+    }
+
+
     public Client()
     {
+
+        using (StreamReader r = new StreamReader("/home/oleg/Documents/ipc_interfaces/config.json"))
+        {
+            string json = r.ReadToEnd();
+            configs = JsonConvert.DeserializeObject<Config>(json);
+        }
+
+
+
         IPHostEntry host = Dns.GetHostEntry("localhost");
         IPAddress ipAddress = host.AddressList[0];
-        remoteEP = new IPEndPoint(ipAddress, 11000);
+        remoteEP = new IPEndPoint(ipAddress, configs.port);
 
         // Create a TCP/IP  socket.
         sender = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
@@ -46,6 +66,7 @@ class Client
 
     private Socket sender;
     IPEndPoint remoteEP;
+    private Config configs;
 }
 
 

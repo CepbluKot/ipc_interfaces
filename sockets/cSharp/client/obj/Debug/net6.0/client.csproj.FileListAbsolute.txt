@@ -24,3 +24,5 @@
 /home/oleg/Documents/ipc_interfaces/sockets/cSharp/client/obj/Debug/net6.0/client.pdb
 /home/oleg/Documents/ipc_interfaces/sockets/cSharp/client/obj/Debug/net6.0/client.genruntimeconfig.cache
 /home/oleg/Documents/ipc_interfaces/sockets/cSharp/client/obj/Debug/net6.0/ref/client.dll
+/home/oleg/Documents/ipc_interfaces/sockets/cSharp/client/bin/Debug/net6.0/Newtonsoft.Json.dll
+/home/oleg/Documents/ipc_interfaces/sockets/cSharp/client/obj/Debug/net6.0/client.csproj.CopyComplete

@@ -2,18 +2,35 @@ using System;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
-
+using Newtonsoft.Json;
 // Socket Listener acts as a server and listens to the incoming
 // messages on the specified port and protocol.
 
 
 class Server
 {
+    class Config
+    {
+        [JsonProperty("port")]
+        public int port { get; set; }
+
+        [JsonProperty("nSymbols")]
+        public int nSymbols { get; set; }
+    }
+
+
     public Server()
     {
+
+        using (StreamReader r = new StreamReader("/home/oleg/Documents/ipc_interfaces/config.json"))
+        {
+            string json = r.ReadToEnd();
+            configs = JsonConvert.DeserializeObject<Config>(json);
+        }
+        
         IPHostEntry host = Dns.GetHostEntry("localhost");
         IPAddress ipAddress = host.AddressList[0];
-        IPEndPoint localEndPoint = new IPEndPoint(ipAddress, 11000);
+        IPEndPoint localEndPoint = new IPEndPoint(ipAddress, configs.port);
 
         listener = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
         listener.Bind(localEndPoint);
@@ -33,7 +50,7 @@ class Server
             string data = null;
             byte[] bytes = null;
 
-            bytes = new byte[1024];
+            bytes = new byte[configs.nSymbols];
             int bytesRec = handler.Receive(bytes);
 
 
@@ -52,6 +69,7 @@ class Server
 
     private Socket listener;
     private Socket handler;
+    private Config configs;
 }
 
 
