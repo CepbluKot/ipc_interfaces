@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "z8er8iicweAupl8kUqoVRAk8gTQsOlA6CiFA3xkhud8lwQP+FBttWlrWSXbAVlWqGTR3Zvzj7PsHOTqNUM1zWQ==",
+  "success": true,
+  "projectFilePath": "/home/oleg/Documents/ipc_interfaces/sockets/cSharp/server/server.csproj",
+  "expectedPackageFiles": [
+    "/home/oleg/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

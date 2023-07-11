@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/oleg/Documents/ipc_interfaces/sockets/cSharp/client/client.csproj": {}
+  },
+  "projects": {
+    "/home/oleg/Documents/ipc_interfaces/sockets/cSharp/client/client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/oleg/Documents/ipc_interfaces/sockets/cSharp/client/client.csproj",
+        "projectName": "client",
+        "projectPath": "/home/oleg/Documents/ipc_interfaces/sockets/cSharp/client/client.csproj",
+        "packagesPath": "/home/oleg/.nuget/packages/",
+        "outputPath": "/home/oleg/Documents/ipc_interfaces/sockets/cSharp/client/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/oleg/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/oleg/.dotnet/sdk/6.0.411/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
