@@ -3,7 +3,7 @@ import json, typing, socket
 
 class Server:
     def __init__(self) -> None:
-        f = open('config.json')
+        f = open('/home/oleg/Documents/ipc_interfaces/config.json')
         config = json.load(f)
         port = config['port']
         ip = '127.0.0.1'
